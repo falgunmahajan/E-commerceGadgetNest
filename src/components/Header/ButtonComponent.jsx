@@ -1,22 +1,12 @@
-import { Button } from '@mui/material'
-import React from 'react'
+import React from "react";
 
-const ButtonComponent = ({children}) => {
-  return (
-    <Button
-    variant="contained"
-    size="small"
-    sx={{
-      bgcolor: "red",
-      borderRadius: "9999px",
-      "&:hover": {
-        bgcolor: "red",
-      },
-    }}
+const ButtonComponent = ({ children, onClick, style }) => (
+  <button
+    className={`bg-red-600 ${style} text-white px-4 py-1  `}
+    onClick={onClick}
   >
     {children}
-  </Button>
-  )
-}
+  </button>
+);
 
-export default ButtonComponent
+export default ButtonComponent;
