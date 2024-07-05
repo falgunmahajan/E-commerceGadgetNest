@@ -7,7 +7,7 @@ const Login = ({onClick}) => {
   const [showPassword,setShowPassword]=useState(false)
 
   return (
-    <div className="w-full p-5 bg-white mx-auto container rounded">
+    <div className="w-full p-5 bg-white mx-auto container rounded-md shadow-2xl ">
       <div className="w-28 h-28 mx-auto ">
         <img src={loginIcon} alt="Login Image" />
       </div>

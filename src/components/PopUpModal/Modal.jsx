@@ -13,7 +13,7 @@ const Modal = ({ Component, close }) => {
   return createPortal(
     <div className="  flex columns items-center justify-center fixed inset-0">
       <div className="w-[25%] h-[50%] relative">
-        <CancelOutlined className="absolute -right-1 -top-7 " onClick={close}/>
+        <CancelOutlined className="absolute -right-1 -top-7 shadow-sm z-1" onClick={close}/>
         <Component />
       </div>
     </div>,
